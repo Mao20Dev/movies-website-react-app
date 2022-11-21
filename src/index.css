@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto") url(./fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+.header{
+  width:100%;
+  height: 12vw;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  padding: 5px;
+  font-size: 8.5vw;
+  font-family: "Roboto","Sans-serif";
+}
+
+.main-header{
+  width: 100%;
+  height: 120vh;
+  background: rgba(2, 0, 36, 1);
+}
+.background-main{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+
+}
+.blur-background{
+  width: 100%;
+  height: 60vh;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  background: rgb(2,0,36,0.2);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.9) 3%, rgba(94,94,113,.3) 16%, rgba(224,232,233,0.2) 100%);
+}
+
+
+/*------RECOMMEND SECTION -------*/
+
+.recommend{
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 58vh;
+  padding: 15px;
+  font-family: "Roboto", "Sans-serif";
+  font-size: 5vw;
+}
+.recommend-movies{
+  width: 100%;
+  height: 65vw;
+  position: absolute;
+  top: 62vh;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  
+}
+.movie-container{
+  width: 30%;
+  height: 60vw;
+  margin: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content:center;
+}
+.movie-poster{
+  width: 25vw;
+  height: 40vw;  
+  object-fit:fill;
+  }
+.info-container{
+  height: 20%;
+}
+.movie-name{
+  color: white;
+  font-family: "Roboto","Sans-serif";
+  font-size: 3.8vw;
+}
+.movie-rate{
+  color: white;
+  font-family: "Roboto","Sans-serif";
+  font-size: 2.8vw;
+}
+
+
+/*------MOVIES SECTION -------*/
+.movies-container{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 95vh;
+  z-index: 1000;
+  background: rgba(2, 0, 36, 1);
+}
+.recommend-from-movies{
+  width: 100%;
+  color: white;
+  position: relative;
+  top: 0;
+  padding: 15px;
+  font-family: "Roboto", "Sans-serif";
+  font-size: 5vw;
+}
+.movie-container-main{
+  width: 30%;
+  height: 60vw;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content:center;
+}
+.mainbox{
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  background: rgba(2, 0, 36, 1);;
+}
+.button-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vw;
+}
+.button-container button{
+  width: 25%;
+  height: 10vw; 
+  background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background: rgba(2, 0, 36, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.3px);
+  -webkit-backdrop-filter: blur(18.3px);
+  border: 1px solid rgba(2, 0, 36, 0.05);
+}
