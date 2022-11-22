@@ -122,17 +122,19 @@
 .movie-container-main{
   width: 30%;
   height: 60vw;
-  margin: 5px;
+  margin: 0.2em;
+  padding-left: 0.5em;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: space-evenly;
   justify-content:center;
 }
+
 .mainbox{
-  padding: 5px;
+  padding: 0.4em;
   width: 100%;
   display: flex;
+  justify-content: space-evenly;
   position: absolute;
   flex-wrap: wrap;
   background: rgba(2, 0, 36, 1);;
@@ -160,4 +162,60 @@
   backdrop-filter: blur(18.3px);
   -webkit-backdrop-filter: blur(18.3px);
   border: 1px solid rgba(2, 0, 36, 0.05);
+}
+
+
+
+
+
+/*-------QUERIES---------*/
+@media (max-width: 320px) {
+  .movies-container{
+    top: 87vh;
+  }
+}
+@media (min-width: 460px) {
+  .movies-container{
+    top: 99vh;
+  }
+}
+@media (min-width: 520px) {
+  .movies-container{
+    top: 105vh;
+  }
+}
+@media (min-width: 610px) {
+  .movies-container{
+    top: 110vh;
+  }
+}
+@media (min-width: 676px) {
+  .movies-container{
+    top: 115vh;
+  }
+}
+@media (min-width: 750px) {
+  .movies-container{
+    top: 120vh;
+  }
+}
+@media (min-width: 816px) {
+  .movies-container{
+    top: 125vh;
+  }
+  .main-header{
+    height: 240vh;
+  }
+}
+@media (min-width: 900px) {
+  .movies-container{
+    top: 130vh;
+  }
+}
+
+/*-------iPadAir---------*/
+@media (max-width: 820) and (height:1180){
+  .movies-container{
+    top: 85vh;
+  }
 }

@@ -47,7 +47,7 @@ function App() {
         return(
           <div className="movie-container-main" onClick={(()=> console.log(movie.title))}>
               <img src={"https://www.themoviedb.org/t/p/w220_and_h330_face"+movie.poster_path} alt="" className="movie-poster"/>
-              <div className="info-container">
+              <div className="info-container info-container-movies">
                   <h2 className="movie-name">{movie.title}</h2>
                   <h4 className="movie-rate">{movie.vote_average}</h4>
               </div>
