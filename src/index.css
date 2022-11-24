@@ -183,7 +183,7 @@
 /*-------QUERIES---------*/
 @media (min-width: 460px) {
   .movies-container{
-    top: 99vh;
+    top: 105vh;
   }
 }
 @media (min-width: 520px) {
