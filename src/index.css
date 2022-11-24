@@ -183,20 +183,12 @@
 /*-------QUERIES---------*/
 @media (min-width: 460px) {
   .movies-container{
-    top: 110vh;
+    top: 105vh;
   }
-  .mainbox{
-    top:8vh;
-  }
-  .movie-container{
-    height: 20vw;
-    align-items: center;
-  }
-  
 }
 @media (min-width: 520px) {
   .movies-container{
-    top: 113vh;
+    top: 105vh;
   }
 }
 @media (min-width: 610px) {
