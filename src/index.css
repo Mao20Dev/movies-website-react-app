@@ -358,7 +358,7 @@
 }
 
 /*-------LAPTOP 1366X657---------*/
-@media screen and (max-width:1366px){
+@media screen and (min-width:1366px){
   .movies-container{
     top: 160vh;
   }
